@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      form{
+         background-color: gray;
+         width: 450px;
+         height: 550px;
+         margin-left: 450px;
+         box-shadow: 3px 3px 3px gray;
+      }
+
+      h1{
+         background-color: burlywood;
+         background-size: 100%;
+         padding-left: 50px;
+      }
+
+     label{
+      margin-left: 90px;
+      font-size: 20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+     #male{
+      margin-left: 50px;
+     }
+       
+     #female{
+       margin-left: -20px;
+     }
+
+     #other{
+       margin-left: -25px;
+     }
+
+     #submit{
+      margin-left: 200px;
+     }
+    </style>
+</head>
+<body>
+    <form action="connect.php" method="post">
+        <h1>REGISTRATION FORM</h1>
+        <label for="Firstname">Firstname :</label>
+     <input type="text" placeholder="Your firstname" class="form-control" id="firstname" name="Firstname">
+        <br>
+        <br>
+        <br>
+
+
+        <label for="Lastname">Lastname : </label>
+     <input type="text" placeholder="Your lastname" class="form-control" id="lastname" name="Lastname">
+        <br>
+        <br>
+        <br>
+
+
+        <label for="Male" class="gender">Gender :
+         <br>
+         <br>
+     <input type="radio" class="form-control" id="male" name="Gender">Male</label>
+
+        <label for="Female">
+     <input type="radio" class="form-control" id="female" name="Gender">Female</label>
+
+        <label for="Other">
+     <input type="radio" class="form-control" id="other" name="Gender">Other</label>
+         <br>
+         <br>
+         <br>
+
+
+         <label for="Password">Password :</label>
+     <input type="password" placeholder="Your password" class="form-control" id="password" name="Password">
+          <br>
+          <br>
+          <br>
+
+
+          <label for="Number">Number :</label>
+     <input type="text" placeholder="Your number" class="form-control" id="number" name="Number">
+     <br>
+     <br>
+     <br>
+
+     <input type="Submit" name="Submit" id="submit">
+    </form>
+</body>
+</html>
